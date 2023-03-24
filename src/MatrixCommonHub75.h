@@ -44,6 +44,7 @@
 #define SM_PANELTYPE_HUB75_16ROW_32COL_MOD2SCAN_V2  14
 #define SM_PANELTYPE_HUB75_4ROW_MOD2SCAN_ALT_ADDX   15
 #define SM_PANELTYPE_HUB75_8ROW_MOD4SCAN_ALT_ADDX   16
+#define SM_PANELTYPE_HUB75_32ROW_32COL_MOD8SCAN     17
 
 #define SMARTMATRIX_HUB75_32ROW_MOD16SCAN           SM_PANELTYPE_HUB75_32ROW_MOD16SCAN        
 #define SMARTMATRIX_HUB75_16ROW_MOD8SCAN            SM_PANELTYPE_HUB75_16ROW_MOD8SCAN         
@@ -60,12 +61,14 @@
 #define SMARTMATRIX_HUB75_16ROW_32COL_MOD4SCAN_V3   SM_PANELTYPE_HUB75_16ROW_32COL_MOD4SCAN_V3
 #define SMARTMATRIX_HUB75_16ROW_32COL_MOD4SCAN_V4   SM_PANELTYPE_HUB75_16ROW_32COL_MOD4SCAN_V4
 #define SMARTMATRIX_HUB75_16ROW_32COL_MOD2SCAN_V2   SM_PANELTYPE_HUB75_16ROW_32COL_MOD2SCAN_V2
+#define SMARTMATRIX_HUB75_32ROW_32COL_MOD8SCAN      SM_PANELTYPE_HUB75_32ROW_32COL_MOD8SCAN 
 #define SMARTMATRIX_HUB75_4ROW_MOD2SCAN_ALT_ADDX    SM_PANELTYPE_HUB75_4ROW_MOD2SCAN_ALT_ADDX
 #define SMARTMATRIX_HUB75_8ROW_MOD4SCAN_ALT_ADDX    SM_PANELTYPE_HUB75_8ROW_MOD4SCAN_ALT_ADDX
 
 #define CONVERT_PANELTYPE_TO_MATRIXPANELHEIGHT(x)   ((x == SMARTMATRIX_HUB75_32ROW_MOD16SCAN ? 32 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_64ROW_64COL_MOD16SCAN ? 64 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_16ROW_MOD8SCAN ? 16 : 0) | \
+                                                    (x == SMARTMATRIX_HUB75_32ROW_32COL_MOD8SCAN ? 32 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_16ROW_32COL_MOD2SCAN ? 16 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_4ROW_MOD2SCAN ? 4 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_8ROW_MOD4SCAN ? 8 : 0) | \
@@ -90,6 +93,7 @@
                                                     (x == SMARTMATRIX_HUB75_4ROW_MOD2SCAN_ALT_ADDX ? 2 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_8ROW_MOD4SCAN_ALT_ADDX ? 4 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_32ROW_64COL_MOD8SCAN ? 16 : 0) | \
+                                                    (x == SMARTMATRIX_HUB75_32ROW_32COL_MOD8SCAN ? 16 : 0) | \
                                                     (x == SMARTMATRIX_HUB12_16ROW_32COL_MOD4SCAN ? 8*2 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_16ROW_32COL_MOD4SCAN ? 8 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_16ROW_32COL_MOD4SCAN_V2 ? 8 : 0) | \
@@ -102,6 +106,7 @@
 #define CONVERT_PANELTYPE_TO_MATRIXSCANMOD(x)  ((x == SMARTMATRIX_HUB75_32ROW_MOD16SCAN ? 16 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_64ROW_64COL_MOD16SCAN ? 16 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_16ROW_MOD8SCAN ? 8 : 0) | \
+                                                    (x == SMARTMATRIX_HUB75_32ROW_32COL_MOD8SCAN ? 8 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_16ROW_32COL_MOD2SCAN ? 2 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_4ROW_MOD2SCAN ? 2 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_8ROW_MOD4SCAN ? 4 : 0) | \
@@ -121,6 +126,7 @@
                                                     (x == SMARTMATRIX_HUB75_64ROW_64COL_MOD16SCAN ? 64 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_16ROW_MOD8SCAN ? DEFAULT_PANEL_WIDTH_FOR_LINEAR_PANELS : 0) | \
                                                     (x == SMARTMATRIX_HUB75_16ROW_32COL_MOD2SCAN ? 32 : 0) | \
+                                                    (x == SMARTMATRIX_HUB75_32ROW_32COL_MOD8SCAN ? 32 : 0) | \
                                                     (x == SMARTMATRIX_HUB75_4ROW_MOD2SCAN ? DEFAULT_PANEL_WIDTH_FOR_LINEAR_PANELS : 0) | \
                                                     (x == SMARTMATRIX_HUB75_8ROW_MOD4SCAN ? DEFAULT_PANEL_WIDTH_FOR_LINEAR_PANELS : 0) | \
                                                     (x == SMARTMATRIX_HUB75_4ROW_MOD2SCAN_ALT_ADDX ? DEFAULT_PANEL_WIDTH_FOR_LINEAR_PANELS : 0) | \

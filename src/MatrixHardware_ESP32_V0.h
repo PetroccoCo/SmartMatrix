@@ -118,15 +118,19 @@
     16	GND	13/GND	Ground
     */ 
     #define R1_PIN  GPIO_NUM_23
-    #define G1_PIN  GPIO_NUM_22
-    #define B1_PIN  GPIO_NUM_27
+    // #define G1_PIN  GPIO_NUM_22
+    // #define B1_PIN  GPIO_NUM_27
+    #define G1_PIN  GPIO_NUM_27
+    #define B1_PIN  GPIO_NUM_22
     #define R2_PIN  GPIO_NUM_19
-    #define G2_PIN  GPIO_NUM_18
-    #define B2_PIN  GPIO_NUM_5
+    // #define G2_PIN  GPIO_NUM_18
+    // #define B2_PIN  GPIO_NUM_5
+    #define G2_PIN  GPIO_NUM_5
+    #define B2_PIN  GPIO_NUM_18
 
-    #define A_PIN   GPIO_NUM_16
-    #define B_PIN   GPIO_NUM_4
-    #define C_PIN   GPIO_NUM_0
+    #define A_PIN   GPIO_NUM_32
+    #define B_PIN   GPIO_NUM_33
+    #define C_PIN   GPIO_NUM_25
     #define D_PIN   GPIO_NUM_2
     #define E_PIN   GPIO_NUM_17
 
